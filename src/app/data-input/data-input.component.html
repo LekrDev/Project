@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card m-5">
+                <div class="card-body">
+                    <h3 class="card-title">Insert Your Data</h3>
+                    <div class="form-group">
+                      <label for="">Data1</label>
+                      <input type="text"
+                        [(ngModel)]="data1"
+                        class="form-control" placeholder="e.g. 45,56,778">
+                      <small id="helpId" class="form-text text-muted">Help text</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Data2</label>
+                        <input type="text"
+                            [(ngModel)]="data2"
+                          class="form-control" placeholder="e.g. 45,56,778">
+                        <small id="helpId" class="form-text text-muted">Help text</small>
+                      </div>
+                      <pre>
+                          length of data1: {{ln1()}}
+                      </pre>
+                      <pre>
+                            length of data2: {{ln2()}}
+                        </pre>
+                      <button *ngIf="ln1()==ln2()" type="button" class="btn btn-primary btn-block" (click)="submitData()">
+                          Submit Data
+                      </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

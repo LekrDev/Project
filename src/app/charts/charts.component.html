@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+           <div class="card m-5">
+              
+               <div class="card-body">
+                    <h2 class="card-title">
+                            Chart 1
+                        </h2>
+                    <div  mat-card-image style="display: block">
+                            <canvas baseChart
+                                  [datasets]="barChartData"
+                                  [labels]="barChartLabels"
+                                  [options]="barChartOptions"
+                                  [legend]="barChartLegend"
+                                  [chartType]="ChartType"></canvas>
+                          </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
